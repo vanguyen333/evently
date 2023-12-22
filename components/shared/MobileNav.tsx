@@ -6,12 +6,21 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Image from "next/image";
 
 const MobileNav = () => {
   return (
     <nav className="md:hidden">
       <Sheet>
-        <SheetTrigger>Open</SheetTrigger>
+        <SheetTrigger className="align-middle">
+          <Image
+            src="/assets/icons/menu.svg"
+            alt="menu"
+            width={24}
+            height={24}
+            className="cursor-pointer"
+          />
+        </SheetTrigger>
         <SheetContent>
           <SheetHeader>
             <SheetTitle>Are you sure absolutely sure?</SheetTitle>
