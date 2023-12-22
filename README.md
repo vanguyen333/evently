@@ -1,6 +1,6 @@
 Node version: 20.10.0
 https://www.youtube.com/watch?v=zgGhzuBZOQg&t=171s
-13:12
+23:10
 using shadcn installationg: https://ui.shadcn.com/docs/installation/next
 https://uploadthing.com/ : for upload things in nextjs
 npm install uploadthing @uploadthing/react

@@ -1,0 +1,6 @@
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_ZmxlZXQtbWFuYXRlZS0zMy5jbGVyay5hY2NvdW50cy5kZXYk
+CLERK_SECRET_KEY=sk_test_1V1UqdHyMfK0TLEAcSWsOo3Ez1EYcVnm8WJBnYPT2G
+
+# install clerk steps
+
+# https://clerk.com/docs/quickstarts/nextjs
