@@ -1,3 +1,4 @@
+"use client";
 import {
   Sheet,
   SheetContent,
@@ -6,6 +7,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Separator } from "@radix-ui/react-separator";
 import Image from "next/image";
 
 const MobileNav = () => {
@@ -28,6 +30,7 @@ const MobileNav = () => {
             width={128}
             height={128}
           />
+          <Separator className="border-border-gray-50" />
         </SheetContent>
       </Sheet>
     </nav>
