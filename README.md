@@ -5,6 +5,11 @@ using shadcn installationg: https://ui.shadcn.com/docs/installation/next
 https://uploadthing.com/ : for upload things in nextjs
 npm install uploadthing @uploadthing/react
 after installed uploadthing/tw, remember to reload the webpage by rerun the project
+
+//styling mobile nav
+https://ui.shadcn.com/docs/components/sheet
+npx shadcn-ui@latest add sheet
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
