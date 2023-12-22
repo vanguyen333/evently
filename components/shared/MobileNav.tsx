@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/sheet";
 import { Separator } from "@radix-ui/react-separator";
 import Image from "next/image";
+import NavItems from "./NavItems";
 
 const MobileNav = () => {
   return (
@@ -31,6 +32,7 @@ const MobileNav = () => {
             height={128}
           />
           <Separator className="border-border-gray-50" />
+          <NavItems />
         </SheetContent>
       </Sheet>
     </nav>
