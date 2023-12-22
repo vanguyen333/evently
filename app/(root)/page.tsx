@@ -10,6 +10,10 @@ export default function Home() {
             <h1 className="h1-bold">
               Host, Connect, Celebrate: Your Events, Our Platform!
             </h1>
+            <p className="p-regular-20 md:p-regular-24">
+              Book and learn helpful tips from 3,168+ mentors in world-class
+              companies with our global community.
+            </p>
           </div>
         </div>
       </section>
