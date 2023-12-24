@@ -1,4 +1,5 @@
 Node version: 20.10.0
+npm run dev: to run the project
 https://www.youtube.com/watch?v=zgGhzuBZOQg&t=171s
 53:19
 using shadcn installationg: https://ui.shadcn.com/docs/installation/next
@@ -14,6 +15,8 @@ npx shadcn-ui@latest add sheet
 https://ui.shadcn.com/docs/components/separator
 npx shadcn-ui@latest add separator
 
+//install mongoose: at 56:00
+npm install mongoose mongodb
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
