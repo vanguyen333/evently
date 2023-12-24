@@ -1,7 +1,9 @@
 Node version: 20.10.0
 npm run dev: to run the project
 https://www.youtube.com/watch?v=zgGhzuBZOQg&t=171s
-53:19
+1:12:00
+//current page viewing for mongooddb for project
+https://cloud.mongodb.com/v2/6588a0e293b2105f59492fcf#/metrics/replicaSet/6588a1fe68d71a0b1f3b0f6e/explorer
 using shadcn installationg: https://ui.shadcn.com/docs/installation/next
 https://uploadthing.com/ : for upload things in nextjs
 npm install uploadthing @uploadthing/react
