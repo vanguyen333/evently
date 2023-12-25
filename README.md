@@ -1,4 +1,6 @@
 Node version: 20.10.0
+check version of nodejs : nvm list
+pick a specific version: nvm use 20.10.0
 npm run dev: to run the project
 https://www.youtube.com/watch?v=zgGhzuBZOQg&t=171s
 1:12:00
@@ -19,6 +21,10 @@ npx shadcn-ui@latest add separator
 
 //install mongoose: at 56:00
 npm install mongoose mongodb
+
+//install: 1:13:58
+npm install svix
+https://clerk.com/docs/users/sync-data#sync-clerk-data-to-your-backend-with-webhooks
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
