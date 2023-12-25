@@ -1,4 +1,9 @@
 //nextjs server action file
 "use server";
 
-export const createuser = async (user) => {};
+import { CreateUserParams } from "@/types";
+
+export const createuser = async (user: CreateUserParams) => {
+  try {
+  } catch (error) {}
+};
