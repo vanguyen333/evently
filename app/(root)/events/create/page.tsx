@@ -1,3 +1,4 @@
+import EventForm from "@/components/shared/EventForm";
 import React from "react";
 
 const CreateEvent = () => {
@@ -8,7 +9,9 @@ const CreateEvent = () => {
           Create Event
         </h3>
       </section>
-      <div className="wrapper my-8"></div>
+      <div className="wrapper my-8">
+        <EventForm />
+      </div>
     </>
   );
 };
