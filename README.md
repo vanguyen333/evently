@@ -30,6 +30,8 @@ https://clerk.com/docs/users/sync-data#sync-clerk-data-to-your-backend-with-webh
 //install shadcn form
 npx shadcn-ui@latest add form
 link: https://ui.shadcn.com/docs/components/form
+//install shadcn input
+npx shadcn-ui@latest add input
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
