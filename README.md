@@ -1,4 +1,4 @@
-1:44:14
+1:47
 Node version: 20.10.0
 check version of nodejs : nvm list
 pick a specific version: nvm use 20.10.0
