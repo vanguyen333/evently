@@ -41,6 +41,10 @@ npx shadcn-ui@latest add select
 https://ui.shadcn.com/docs/components/alert-dialog
 npx shadcn-ui@latest add alert-dialog
 
+//installed textarea
+https://ui.shadcn.com/docs/components/textarea
+npx shadcn-ui@latest add textarea
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
