@@ -16,18 +16,18 @@ import {
 import { Input } from "@/components/ui/input";
 import { eventFormSchema } from "@/lib/validator";
 import * as z from "zod";
+import { eventDefaultValues } from "@/constants";
 
 type EventFormProps = {
   userId: string;
   type: "Create" | "Update";
 };
 const EventForm = ({ userId, type }: EventFormProps) => {
+  const initialValues = eventDefaultValues;
   // 1. Define your form.
   const form = useForm<z.infer<typeof eventFormSchema>>({
     resolver: zodResolver(eventFormSchema),
-    defaultValues: {
-      username: "",
-    },
+    defaultValues: initialValues,
   });
 
   // 2. Define a submit handler.
