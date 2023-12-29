@@ -33,6 +33,10 @@ link: https://ui.shadcn.com/docs/components/form
 //install shadcn input
 npx shadcn-ui@latest add input
 
+//install select
+https://ui.shadcn.com/docs/components/select
+npx shadcn-ui@latest add select
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
