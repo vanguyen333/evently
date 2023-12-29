@@ -47,16 +47,18 @@ const EventForm = ({ userId, type }: EventFormProps) => {
           {" "}
           <FormField
             control={form.control}
-            name="username"
+            name="title"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="w-full">
                 <FormLabel>Username</FormLabel>
                 <FormControl>
-                  <Input placeholder="shadcn" {...field} />
+                  <Input
+                    placeholder="Event title"
+                    {...field}
+                    className="input-field"
+                  />
                 </FormControl>
-                <FormDescription>
-                  This is your public display name.
-                </FormDescription>
+
                 <FormMessage />
               </FormItem>
             )}
