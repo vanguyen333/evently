@@ -37,6 +37,10 @@ npx shadcn-ui@latest add input
 https://ui.shadcn.com/docs/components/select
 npx shadcn-ui@latest add select
 
+//install alertdialog
+https://ui.shadcn.com/docs/components/alert-dialog
+npx shadcn-ui@latest add alert-dialog
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
