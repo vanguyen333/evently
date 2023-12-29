@@ -18,6 +18,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+import { Input } from "../ui/input";
 
 type DropdownProps = {
   value?: string;
@@ -25,6 +26,8 @@ type DropdownProps = {
 };
 const Dropdown = ({ value, onChangeHandler }: DropdownProps) => {
   const [categories, setCategories] = useState<ICategory[]>([]);
+  const [newCategory, setNewCategory] = useState("");
+
   return (
     <Select onValueChange={onChangeHandler} defaultValue={value}>
       <SelectTrigger className="select-field">
@@ -48,10 +51,14 @@ const Dropdown = ({ value, onChangeHandler }: DropdownProps) => {
           </AlertDialogTrigger>
           <AlertDialogContent className="bg-white">
             <AlertDialogHeader>
-              <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+              <AlertDialogTitle>New Category</AlertDialogTitle>
               <AlertDialogDescription>
-                This action cannot be undone. This will permanently delete your
-                account and remove your data from our servers.
+                <Input
+                  type="text"
+                  placeholder="category-name"
+                  className="input-field mt-3"
+                  onChange={(e) => setNewCategory(e.target.value)}
+                />
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
