@@ -20,6 +20,8 @@ import { eventDefaultValues } from "@/constants";
 import Dropdown from "./Dropdown";
 import { Textarea } from "@/components/ui/textarea";
 
+import FileUploader from "./FileUploader";
+
 type EventFormProps = {
   userId: string;
   type: "Create" | "Update";
@@ -51,7 +53,7 @@ const EventForm = ({ userId, type }: EventFormProps) => {
             name="title"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel>Username</FormLabel>
+                {/* <FormLabel>Username</FormLabel> */}
                 <FormControl>
                   <Input
                     placeholder="Event title"
@@ -69,7 +71,7 @@ const EventForm = ({ userId, type }: EventFormProps) => {
             name="categoryId"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel>Username</FormLabel>
+                {/* <FormLabel>Username</FormLabel> */}
                 <FormControl>
                   <Dropdown
                     onChangeHandler={field.onChange}
@@ -90,13 +92,26 @@ const EventForm = ({ userId, type }: EventFormProps) => {
             name="description"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel>Username</FormLabel>
+                {/* <FormLabel>Username</FormLabel> */}
                 <FormControl className="h-72">
                   <Textarea
                     placeholder="Description"
                     {...field}
-                    className="textarea rounde-2xl"
+                    className="textarea rounded-2xl"
                   />
+                </FormControl>
+
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="imgUrl"
+            render={({ field }) => (
+              <FormItem className="w-full">
+                <FormControl className="h-72">
+                  <FileUploader />
                 </FormControl>
 
                 <FormMessage />
