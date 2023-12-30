@@ -14,3 +14,7 @@ MONGODB_URI=mongodb+srv://evently:evently@cluster0.84zxvyw.mongodb.net/?retryWri
 
 //clerk, sign in secret: whsec_8RKUm3NNrZMN09h6yiWTT3rDYp63L5n+
 WEBHOOK_SECRET=whsec_8RKUm3NNrZMN09h6yiWTT3rDYp63L5n+
+
+//uploadthing
+UPLOADTHING_SECRET=sk_live_597ca5316e4856eb735af4e4e61bc2d60a383735722980ba88968c12a8a410cc
+UPLOADTHING_APP_ID=8bgoy7z3va
