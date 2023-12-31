@@ -20,7 +20,7 @@ import { eventDefaultValues } from "@/constants";
 import Dropdown from "./Dropdown";
 import { Textarea } from "@/components/ui/textarea";
 
-import FileUploader from "./FileUploader";
+import { FileUploader } from "./FileUploader";
 import { useState } from "react";
 
 type EventFormProps = {
@@ -115,7 +115,7 @@ const EventForm = ({ userId, type }: EventFormProps) => {
                 <FormControl className="h-72">
                   <FileUploader
                     onFieldChange={field.onChange}
-                    imageUrl={file.values}
+                    imageUrl={field.value}
                     setFiles={setFile}
                   />
                 </FormControl>
