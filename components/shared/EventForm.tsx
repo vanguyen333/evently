@@ -155,6 +155,34 @@ const EventForm = ({ userId, type }: EventFormProps) => {
             )}
           />
         </div>
+        <div className="flex flex-col gap-5 md:flex-row">
+          {" "}
+          <FormField
+            control={form.control}
+            name="startDateTime"
+            render={({ field }) => (
+              <FormItem className="w-full">
+                {/* <FormLabel>Username</FormLabel> */}
+                <FormControl>
+                  <div className="flex-center h-[54px] w-full overflow-hidden rounded-full bg-grey-50 px-4 py-2">
+                    <Image
+                      src="/assets/icons/calendar.svg"
+                      alt="Calender"
+                      width={24}
+                      height={24}
+                      className="filter-gray"
+                    />
+                    <p className="ml-3 whitespace-nowrap text-gray-600">
+                      Start Date:
+                    </p>
+                  </div>
+                </FormControl>
+
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        </div>
 
         <Button type="submit">Submit</Button>
       </form>
