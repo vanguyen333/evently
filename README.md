@@ -46,8 +46,8 @@ https://ui.shadcn.com/docs/components/textarea
 npx shadcn-ui@latest add textarea
 
 //installed react date picker
-npm i react-date-picker
-https://www.npmjs.com/package/react-date-picker
+npm install react-datepicker --save
+https://www.npmjs.com/package/react-datepicker
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
