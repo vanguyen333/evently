@@ -195,10 +195,7 @@ const EventForm = ({ userId, type }: EventFormProps) => {
               </FormItem>
             )}
           />
-        </div>
-        {/* End date time */}
-        <div className="flex flex-col gap-5 md:flex-row">
-          {" "}
+          {/* End date time */}{" "}
           <FormField
             control={form.control}
             name="endDateTime"
