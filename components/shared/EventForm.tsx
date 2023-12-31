@@ -24,7 +24,7 @@ import { FileUploader } from "./FileUploader";
 import { useState } from "react";
 import Image from "next/image";
 
-import DatePicker from "react-date-picker";
+import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 type EventFormProps = {
@@ -33,7 +33,7 @@ type EventFormProps = {
 };
 const EventForm = ({ userId, type }: EventFormProps) => {
   const [file, setFile] = useState<File[]>([]);
-  const [startDate, setStartDate] = useState(new Date());
+
   const initialValues = eventDefaultValues;
   // 1. Define your form.
   const form = useForm<z.infer<typeof eventFormSchema>>({
@@ -180,8 +180,8 @@ const EventForm = ({ userId, type }: EventFormProps) => {
                       Start Date:
                     </p>
                     <DatePicker
-                      selected={startDate}
-                      onChange={(date) => setStartDate(date)}
+                      selected={field.value}
+                      onChange={(date: Date) => field.onChange(date)}
                     />
                   </div>
                 </FormControl>
