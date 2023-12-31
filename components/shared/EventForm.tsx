@@ -22,6 +22,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 import { FileUploader } from "./FileUploader";
 import { useState } from "react";
+import Image from "next/image";
 
 type EventFormProps = {
   userId: string;
@@ -124,6 +125,35 @@ const EventForm = ({ userId, type }: EventFormProps) => {
               </FormItem>
             )}
           />
+          <div className="flex flex-col gap-5 md:flex-row">
+            {" "}
+            <FormField
+              control={form.control}
+              name="location"
+              render={({ field }) => (
+                <FormItem className="w-full">
+                  {/* <FormLabel>Username</FormLabel> */}
+                  <FormControl>
+                    <div>
+                      <Image
+                        src="/assets/icons/location-grey.svg"
+                        alt="Calender"
+                        width={24}
+                        height={24}
+                      />
+                      <Input
+                        placeholder="Event title"
+                        {...field}
+                        className="input-field"
+                      />
+                    </div>
+                  </FormControl>
+
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
         </div>
 
         <Button type="submit">Submit</Button>
