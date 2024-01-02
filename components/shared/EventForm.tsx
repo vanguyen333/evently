@@ -261,6 +261,29 @@ const EventForm = ({ userId, type }: EventFormProps) => {
               </FormItem>
             )}
           />
+          {/* isFree */}
+          <FormField
+            control={form.control}
+            name="isFree"
+            render={({ field }) => (
+              <FormItem>
+                {/* <FormLabel>Username</FormLabel> */}
+                <FormControl>
+                  <div className="flex items-center">
+                    <label
+                      htmlFor="isFree"
+                      className="whitespace-nowrap pr-3 leading-none peer-disabled:cursor-not-allowed peer-aria-disabled:opacity-70"
+                    >
+                      Free ticket
+                    </label>
+                    <Checkbox />
+                  </div>
+                </FormControl>
+
+                <FormMessage />
+              </FormItem>
+            )}
+          />
         </div>
         <Button type="submit">Submit</Button>
       </form>
