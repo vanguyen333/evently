@@ -26,6 +26,7 @@ import Image from "next/image";
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { Checkbox } from "@/components/ui/checkbox";
 
 type EventFormProps = {
   userId: string;
@@ -276,7 +277,7 @@ const EventForm = ({ userId, type }: EventFormProps) => {
                     >
                       Free ticket
                     </label>
-                    <Checkbox />
+                    <Checkbox id="isFree" className="mr-2" />
                   </div>
                 </FormControl>
 
