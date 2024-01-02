@@ -49,6 +49,10 @@ npx shadcn-ui@latest add textarea
 npm install react-datepicker --save
 npm i --save-dev @types/react-datepicker
 https://www.npmjs.com/package/react-datepicker
+
+//install shadcn checkbook
+npx shadcn-ui@latest add checkbox
+https://ui.shadcn.com/docs/components/checkbox
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
