@@ -288,6 +288,33 @@ const EventForm = ({ userId, type }: EventFormProps) => {
               </FormItem>
             )}
           />
+          {/* URL */}
+          <FormField
+            control={form.control}
+            name="url"
+            render={({ field }) => (
+              <FormItem className="w-full">
+                {/* <FormLabel>Username</FormLabel> */}
+                <FormControl>
+                  <div className="flex-center h-[54px] w-full overflow-hidden rounded-full bg-grey-50 px-4 py-2">
+                    <Image
+                      src="/assets/icons/link.svg"
+                      alt="link"
+                      width={24}
+                      height={24}
+                    />
+                    <Input
+                      placeholder="URL"
+                      {...field}
+                      className="input-field"
+                    />
+                  </div>
+                </FormControl>
+
+                <FormMessage />
+              </FormItem>
+            )}
+          />
         </div>
         <Button type="submit">Submit</Button>
       </form>
