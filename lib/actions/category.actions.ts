@@ -18,3 +18,16 @@ export const createCategory = async ({
     handleError(error);
   }
 };
+
+//fetch category
+export const getAllCategory = async () => {
+  try {
+    await connectToDatabase();
+
+    const categories = await Category.find({});
+
+    return JSON.parse(JSON.stringify(categories));
+  } catch (error) {
+    handleError(error);
+  }
+};
