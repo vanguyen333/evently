@@ -1,4 +1,5 @@
-3:04:16, npm run dev
+3:06:44, npm run dev
+having error with category dropdown
 Node version: 20.10.0
 check version of nodejs : nvm list
 pick a specific version: nvm use 20.10.0
